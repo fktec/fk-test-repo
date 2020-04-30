@@ -1,0 +1,74 @@
+{
+  "subscriptionId": "17644617-4aaa-4e3a-9c39-b5e16f951c94",
+  "notificationId": 1,
+  "id": "4e7f412e-2d20-46ac-9f63-68eb3875f7c6",
+  "eventType": "workitem.deleted",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Epic #1 (TEST CUSTOM EPIC  1 / UPDATE TITLE) deleted by Frank Barros",
+    "html": "Epic #1 (TEST CUSTOM EPIC  1 / UPDATE TITLE) deleted by Frank Barros",
+    "markdown": "Epic #1 (TEST CUSTOM EPIC  1 / UPDATE TITLE) deleted by Frank Barros"
+  },
+  "detailedMessage": {
+    "text": "Epic #1 (TEST CUSTOM EPIC  1 / UPDATE TITLE) deleted by Frank Barros\r\n\r\n- Area: FK-TESTE-FABRICA\r\n- Iteration: FK-TESTE-FABRICA\r\n- State: New\r\n- Assigned to: Frank Barros <fktec2014@outlook.com>\r\n",
+    "html": "Epic #1 (TEST CUSTOM EPIC  1 / UPDATE TITLE) deleted by Frank Barros<ul>\r\n<li>Area: FK-TESTE-FABRICA</li>\r\n<li>Iteration: FK-TESTE-FABRICA</li>\r\n<li>State: New</li>\r\n<li>Assigned to: Frank Barros <fktec2014@outlook.com></li></ul>",
+    "markdown": "Epic #1 (TEST CUSTOM EPIC  1 / UPDATE TITLE) deleted by Frank Barros\r\n\r\n* Area: FK-TESTE-FABRICA\r\n* Iteration: FK-TESTE-FABRICA\r\n* State: New\r\n* Assigned to: Frank Barros <fktec2014@outlook.com>\r\n"
+  },
+  "resource": {
+    "id": 1,
+    "rev": 3,
+    "fields": {
+      "System.AreaPath": "FK-TESTE-FABRICA",
+      "System.TeamProject": "FK-TESTE-FABRICA",
+      "System.IterationPath": "FK-TESTE-FABRICA",
+      "System.WorkItemType": "Epic",
+      "System.State": "New",
+      "System.Reason": "New epic",
+      "System.AssignedTo": "Frank Barros <fktec2014@outlook.com>",
+      "System.CreatedDate": "2020-03-30T15:14:08.837Z",
+      "System.CreatedBy": "Frank Barros <fktec2014@outlook.com>",
+      "System.ChangedDate": "2020-03-30T18:04:37.883Z",
+      "System.ChangedBy": "Frank Barros <fktec2014@outlook.com>",
+      "System.CommentCount": 2,
+      "System.Title": "TEST CUSTOM EPIC  1 / UPDATE TITLE",
+      "Microsoft.VSTS.Scheduling.TargetDate": "2020-03-31T00:00:00Z",
+      "Microsoft.VSTS.Scheduling.StartDate": "2020-03-30T00:00:00Z",
+      "Microsoft.VSTS.Common.StateChangeDate": "2020-03-30T15:14:08.837Z",
+      "Microsoft.VSTS.Common.Priority": 2,
+      "Microsoft.VSTS.Common.ValueArea": "Business",
+      "Custom.TestField1": "Valor Test field Status 1",
+      "Custom.TestFieldNewGroup1": "Valor Test field new group 1/ UPDATE TEST FIELD",
+      "Custom.TestFieldDetails1": "Valor Test field Details 1",
+      "System.Description": "<div>Valor Description&nbsp;/ UPDATE DESCRIPTION</div>",
+      "Microsoft.VSTS.Common.AcceptanceCriteria": "<div><span style=\"display:inline !important;\">Valor Acceptance Criteria&nbsp;/ UPDATE CRITERIA</span><br></div>"
+    },
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/recyclebin/1"
+      },
+      "workItemType": {
+        "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItemTypes/Epic"
+      },
+      "fields": {
+        "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/fields"
+      }
+    },
+    "url": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/recyclebin/1"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "346399a7-0d57-4a7b-af17-7d5711bf24c8",
+      "baseUrl": "https://dev.azure.com/fktec2014/"
+    },
+    "account": {
+      "id": "3c6df18a-93ee-4eea-b5f1-5e2a6532ea13",
+      "baseUrl": "https://dev.azure.com/fktec2014/"
+    },
+    "project": {
+      "id": "f8178df3-7e8a-46f5-ad12-d66de54362b3",
+      "baseUrl": "https://dev.azure.com/fktec2014/"
+    }
+  },
+  "createdDate": "2020-03-30T18:04:45.0589284Z"
+}

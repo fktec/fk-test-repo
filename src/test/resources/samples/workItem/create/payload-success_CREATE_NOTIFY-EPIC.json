@@ -1,0 +1,93 @@
+{
+  "subscriptionId": "6fdaf65f-a3e3-45f5-b475-d63ca3e87282",
+  "notificationId": 2,
+  "id": "184567cd-788a-419f-ab4c-94b189801cba",
+  "eventType": "workitem.created",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Epic #47 (TEST SHARED EPIC 1) created by Frank Barros\r\n(https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&id=47)",
+    "html": "<a href=\"https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&amp;id=47\">Epic #47</a> (TEST SHARED EPIC 1) created by Frank Barros",
+    "markdown": "[Epic #47](https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&id=47) (TEST SHARED EPIC 1) created by Frank Barros"
+  },
+  "detailedMessage": {
+    "text": "Epic #47 (TEST SHARED EPIC 1) created by Frank Barros\r\n(https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&id=47)\r\n\r\n- Area: TESTE-FSW-SHARED\r\n- Iteration: TESTE-FSW-SHARED\\Sprint 1\r\n- State: New\r\n- Assigned to: Frank Barros <fktec2019@outlook.com>\r\n- Comment: \r\nTEST COMMENTS @Frank Barros(#) \r\n\r\n\r\n",
+    "html": "<a href=\"https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&amp;id=47\">Epic #47</a> (TEST SHARED EPIC 1) created by Frank Barros<ul>\r\n<li>Area: TESTE-FSW-SHARED</li>\r\n<li>Iteration: TESTE-FSW-SHARED\\Sprint 1</li>\r\n<li>State: New</li>\r\n<li>Assigned to: Frank Barros <fktec2019@outlook.com></li>\r\n<li>Comment: <div><span>TEST COMMENTS <a href=\"#\" data-vss-mention=\"version:2.0,bda5e454-6867-661a-8e17-b62413e65354\">@Frank Barros</a>&nbsp;<br></span></div></li></ul>",
+    "markdown": "[Epic #47](https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&id=47) (TEST SHARED EPIC 1) created by Frank Barros\r\n\r\n* Area: TESTE-FSW-SHARED\r\n* Iteration: TESTE-FSW-SHARED\\Sprint 1\r\n* State: New\r\n* Assigned to: Frank Barros <fktec2019@outlook.com>\r\n* Comment: \r\nTEST COMMENTS [@Frank Barros](#) \r\n\r\n\r\n"
+  },
+  "resource": {
+    "id": 47,
+    "rev": 1,
+    "fields": {
+      "System.AreaPath": "TESTE-FSW-SHARED",
+      "System.TeamProject": "TESTE-FSW-SHARED",
+      "System.IterationPath": "TESTE-FSW-SHARED\\Sprint 1",
+      "System.WorkItemType": "Epic",
+      "System.State": "New",
+      "System.Reason": "New epic",
+      "System.AssignedTo": "Frank Barros <fktec2019@outlook.com>",
+      "System.CreatedDate": "2020-04-13T14:40:27.363Z",
+      "System.CreatedBy": "Frank Barros <fktec2019@outlook.com>",
+      "System.ChangedDate": "2020-04-13T14:40:27.363Z",
+      "System.ChangedBy": "Frank Barros <fktec2019@outlook.com>",
+      "System.CommentCount": 1,
+      "System.Title": "TEST SHARED EPIC 1",
+      "Microsoft.VSTS.Common.StateChangeDate": "2020-04-13T14:40:27.363Z",
+      "Microsoft.VSTS.Common.Priority": 2,
+      "Microsoft.VSTS.Common.ValueArea": "Business",
+      "Microsoft.VSTS.Scheduling.TargetDate": "2020-04-14T00:00:00Z",
+      "Microsoft.VSTS.Common.BusinessValue": 44,
+      "Microsoft.VSTS.Common.TimeCriticality": 5,
+      "Microsoft.VSTS.Scheduling.Effort": 3,
+      "Microsoft.VSTS.Scheduling.StartDate": "2020-04-14T00:00:00Z",
+      "System.Description": "<div>TEST ESCRIPTION</div>",
+      "System.History": "<div><span>TEST COMMENTS <a href=\"#\" data-vss-mention=\"version:2.0,bda5e454-6867-661a-8e17-b62413e65354\">@Frank Barros</a>&nbsp;<br></span></div>",
+      "Microsoft.VSTS.Common.AcceptanceCriteria": "<div>TEST CRITERIA</div>",
+      "System.Tags": "TAG 1; TAG 2"
+    },
+    "commentVersionRef": {
+      "commentId": 4256496,
+      "version": 1,
+      "url": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/47/comments/4256496/versions/1"
+    },
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/47"
+      },
+      "workItemUpdates": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/47/updates"
+      },
+      "workItemRevisions": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/47/revisions"
+      },
+      "workItemComments": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/47/comments"
+      },
+      "html": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_workitems/edit/47"
+      },
+      "workItemType": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItemTypes/Epic"
+      },
+      "fields": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/fields"
+      }
+    },
+    "url": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/47"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "5d9209d3-0c3d-48a4-ae43-4f405a2fef98",
+      "baseUrl": "https://dev.azure.com/fktec2019/"
+    },
+    "account": {
+      "id": "c149e5d7-4c12-4de8-b06c-519e9111aa2e",
+      "baseUrl": "https://dev.azure.com/fktec2019/"
+    },
+    "project": {
+      "id": "b77798a0-f970-4755-9e78-3c649826fbf7",
+      "baseUrl": "https://dev.azure.com/fktec2019/"
+    }
+  },
+  "createdDate": "2020-04-13T14:40:33.867993Z"
+}

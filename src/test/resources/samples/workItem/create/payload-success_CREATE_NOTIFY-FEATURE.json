@@ -1,0 +1,104 @@
+{
+  "subscriptionId": "6fdaf65f-a3e3-45f5-b475-d63ca3e87282",
+  "notificationId": 3,
+  "id": "745eff41-b364-4e2f-9233-10247bb46e6c",
+  "eventType": "workitem.created",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Feature #48 (TEST SHARED FEATURE 1) created by Frank Barros\r\n(https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&id=48)",
+    "html": "<a href=\"https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&amp;id=48\">Feature #48</a> (TEST SHARED FEATURE 1) created by Frank Barros",
+    "markdown": "[Feature #48](https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&id=48) (TEST SHARED FEATURE 1) created by Frank Barros"
+  },
+  "detailedMessage": {
+    "text": "Feature #48 (TEST SHARED FEATURE 1) created by Frank Barros\r\n(https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&id=48)\r\n\r\n- Area: TESTE-FSW-SHARED\r\n- Iteration: TESTE-FSW-SHARED\\Sprint 1\r\n- State: New\r\n- Assigned to: Frank Barros <fktec2019@outlook.com>\r\n- Comment: TEST COMENTÁRIO @Frank Barros(#) \r\n\r\n",
+    "html": "<a href=\"https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&amp;id=48\">Feature #48</a> (TEST SHARED FEATURE 1) created by Frank Barros<ul>\r\n<li>Area: TESTE-FSW-SHARED</li>\r\n<li>Iteration: TESTE-FSW-SHARED\\Sprint 1</li>\r\n<li>State: New</li>\r\n<li>Assigned to: Frank Barros <fktec2019@outlook.com></li>\r\n<li>Comment: <span style=\"display:inline !important;background-color:rgba(255, 255, 255, 1);\">TEST COMENTÁRIO <a href=\"#\" data-vss-mention=\"version:2.0,bda5e454-6867-661a-8e17-b62413e65354\">@Frank Barros</a>&nbsp;</span><br></li></ul>",
+    "markdown": "[Feature #48](https://dev.azure.com/fktec2019/web/wi.aspx?pcguid=5d9209d3-0c3d-48a4-ae43-4f405a2fef98&id=48) (TEST SHARED FEATURE 1) created by Frank Barros\r\n\r\n* Area: TESTE-FSW-SHARED\r\n* Iteration: TESTE-FSW-SHARED\\Sprint 1\r\n* State: New\r\n* Assigned to: Frank Barros <fktec2019@outlook.com>\r\n* Comment: TEST COMENTÁRIO [@Frank Barros](#) \r\n\r\n"
+  },
+  "resource": {
+    "id": 48,
+    "rev": 1,
+    "fields": {
+      "System.AreaPath": "TESTE-FSW-SHARED",
+      "System.TeamProject": "TESTE-FSW-SHARED",
+      "System.IterationPath": "TESTE-FSW-SHARED\\Sprint 1",
+      "System.WorkItemType": "Feature",
+      "System.State": "New",
+      "System.Reason": "New feature",
+      "System.AssignedTo": "Frank Barros <fktec2019@outlook.com>",
+      "System.CreatedDate": "2020-04-13T14:45:23.79Z",
+      "System.CreatedBy": "Frank Barros <fktec2019@outlook.com>",
+      "System.ChangedDate": "2020-04-13T14:45:23.79Z",
+      "System.ChangedBy": "Frank Barros <fktec2019@outlook.com>",
+      "System.CommentCount": 1,
+      "System.Title": "TEST SHARED FEATURE 1",
+      "Microsoft.VSTS.Common.StateChangeDate": "2020-04-13T14:45:23.79Z",
+      "Microsoft.VSTS.Common.Priority": 2,
+      "Microsoft.VSTS.Common.ValueArea": "Business",
+      "Microsoft.VSTS.Scheduling.TargetDate": "2020-04-15T00:00:00Z",
+      "Microsoft.VSTS.Common.BusinessValue": 36,
+      "Microsoft.VSTS.Common.TimeCriticality": 5,
+      "Microsoft.VSTS.Scheduling.Effort": 7,
+      "Microsoft.VSTS.Scheduling.StartDate": "2020-04-16T00:00:00Z",
+      "System.Description": "<div>TEST DESCRIPTION</div>",
+      "System.History": "<span style=\"display:inline !important;background-color:rgba(255, 255, 255, 1);\">TEST COMENTÁRIO <a href=\"#\" data-vss-mention=\"version:2.0,bda5e454-6867-661a-8e17-b62413e65354\">@Frank Barros</a>&nbsp;</span><br>",
+      "Microsoft.VSTS.Common.AcceptanceCriteria": "<span style=\"display:inline !important;background-color:rgba(255, 255, 255, 1);\">TEST CRITERIA</span>",
+      "System.Tags": "TAG 1; TAG 2",
+      "System.Parent": 47
+    },
+    "relations": [
+      {
+        "rel": "System.LinkTypes.Hierarchy-Reverse",
+        "url": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/47",
+        "attributes": {
+          "isLocked": false,
+          "name": "Parent"
+        }
+      }
+    ],
+    "commentVersionRef": {
+      "commentId": 4256510,
+      "version": 1,
+      "url": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/48/comments/4256510/versions/1"
+    },
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/48"
+      },
+      "workItemUpdates": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/48/updates"
+      },
+      "workItemRevisions": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/48/revisions"
+      },
+      "workItemComments": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/48/comments"
+      },
+      "html": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_workitems/edit/48"
+      },
+      "workItemType": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItemTypes/Feature"
+      },
+      "fields": {
+        "href": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/fields"
+      }
+    },
+    "url": "https://dev.azure.com/fktec2019/b77798a0-f970-4755-9e78-3c649826fbf7/_apis/wit/workItems/48"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "5d9209d3-0c3d-48a4-ae43-4f405a2fef98",
+      "baseUrl": "https://dev.azure.com/fktec2019/"
+    },
+    "account": {
+      "id": "c149e5d7-4c12-4de8-b06c-519e9111aa2e",
+      "baseUrl": "https://dev.azure.com/fktec2019/"
+    },
+    "project": {
+      "id": "b77798a0-f970-4755-9e78-3c649826fbf7",
+      "baseUrl": "https://dev.azure.com/fktec2019/"
+    }
+  },
+  "createdDate": "2020-04-13T14:45:30.2611375Z"
+}

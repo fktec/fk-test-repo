@@ -1,0 +1,168 @@
+{
+  "subscriptionId": "ff4840b5-8004-46ec-b0cc-9b07635952c5",
+  "notificationId": 1,
+  "id": "6a41dff9-131a-4133-96f9-2116ac8b66e8",
+  "eventType": "workitem.updated",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Epic #1 (TEST CUSTOM EPIC  1 / UPDATE TITLE) updated by Frank Barros\r\n(https://dev.azure.com/fktec2014/web/wi.aspx?pcguid=346399a7-0d57-4a7b-af17-7d5711bf24c8&id=1)",
+    "html": "<a href=\"https://dev.azure.com/fktec2014/web/wi.aspx?pcguid=346399a7-0d57-4a7b-af17-7d5711bf24c8&amp;id=1\">Epic #1</a> (TEST CUSTOM EPIC  1 / UPDATE TITLE) updated by Frank Barros",
+    "markdown": "[Epic #1](https://dev.azure.com/fktec2014/web/wi.aspx?pcguid=346399a7-0d57-4a7b-af17-7d5711bf24c8&id=1) (TEST CUSTOM EPIC  1 / UPDATE TITLE) updated by Frank Barros"
+  },
+  "detailedMessage": {
+    "text": "Epic #1 (TEST CUSTOM EPIC  1 / UPDATE TITLE) updated by Frank Barros\r\n(https://dev.azure.com/fktec2014/web/wi.aspx?pcguid=346399a7-0d57-4a7b-af17-7d5711bf24c8&id=1)\r\n\r\n- New Title: TEST CUSTOM EPIC  1 / UPDATE TITLE\r\n- Comment: \r\nUPDATE COMMENT\r\n\r\n\r\n",
+    "html": "<a href=\"https://dev.azure.com/fktec2014/web/wi.aspx?pcguid=346399a7-0d57-4a7b-af17-7d5711bf24c8&amp;id=1\">Epic #1</a> (TEST CUSTOM EPIC  1 / UPDATE TITLE) updated by Frank Barros<ul>\r\n<li>New Title: TEST CUSTOM EPIC  1 / UPDATE TITLE</li>\r\n<li>Comment: <div>UPDATE COMMENT<br></div></li></ul>",
+    "markdown": "[Epic #1](https://dev.azure.com/fktec2014/web/wi.aspx?pcguid=346399a7-0d57-4a7b-af17-7d5711bf24c8&id=1) (TEST CUSTOM EPIC  1 / UPDATE TITLE) updated by Frank Barros\r\n\r\n* New Title: TEST CUSTOM EPIC  1 / UPDATE TITLE\r\n* Comment: \r\nUPDATE COMMENT\r\n\r\n\r\n"
+  },
+  "resource": {
+    "id": 2,
+    "workItemId": 1,
+    "rev": 2,
+    "revisedBy": {
+      "id": "7e47727d-9414-6149-978a-231e0f20a49a",
+      "name": "Frank Barros <fktec2014@outlook.com>",
+      "displayName": "Frank Barros",
+      "url": "https://spsprodsbr1.vssps.visualstudio.com/A3c6df18a-93ee-4eea-b5f1-5e2a6532ea13/_apis/Identities/7e47727d-9414-6149-978a-231e0f20a49a",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/fktec2014/_apis/GraphProfile/MemberAvatars/msa.N2U0NzcyN2QtOTQxNC03MTQ5LTk3OGEtMjMxZTBmMjBhNDlh"
+        }
+      },
+      "uniqueName": "fktec2014@outlook.com",
+      "imageUrl": "https://dev.azure.com/fktec2014/_apis/GraphProfile/MemberAvatars/msa.N2U0NzcyN2QtOTQxNC03MTQ5LTk3OGEtMjMxZTBmMjBhNDlh",
+      "descriptor": "msa.N2U0NzcyN2QtOTQxNC03MTQ5LTk3OGEtMjMxZTBmMjBhNDlh"
+    },
+    "revisedDate": "9999-01-01T00:00:00Z",
+    "fields": {
+      "System.Rev": {
+        "oldValue": 1,
+        "newValue": 2
+      },
+      "System.AuthorizedDate": {
+        "oldValue": "2020-03-30T15:14:08.837Z",
+        "newValue": "2020-03-30T17:32:44.213Z"
+      },
+      "System.RevisedDate": {
+        "oldValue": "2020-03-30T17:32:44.213Z",
+        "newValue": "9999-01-01T00:00:00Z"
+      },
+      "System.ChangedDate": {
+        "oldValue": "2020-03-30T15:14:08.837Z",
+        "newValue": "2020-03-30T17:32:44.213Z"
+      },
+      "System.Watermark": {
+        "oldValue": 1,
+        "newValue": 2
+      },
+      "System.CommentCount": {
+        "oldValue": 1,
+        "newValue": 2
+      },
+      "System.Title": {
+        "oldValue": "TEST CUSTOM EPIC  1",
+        "newValue": "TEST CUSTOM EPIC  1 / UPDATE TITLE"
+      },
+      "Microsoft.VSTS.Scheduling.TargetDate": {
+        "newValue": "2020-03-31T00:00:00Z"
+      },
+      "Microsoft.VSTS.Scheduling.StartDate": {
+        "oldValue": "2020-03-24T00:00:00Z",
+        "newValue": "2020-03-30T00:00:00Z"
+      },
+      "Custom.TestFieldNewGroup1": {
+        "oldValue": "Valor Test field new group 1",
+        "newValue": "Valor Test field new group 1/ UPDATE TEST FIELD"
+      },
+      "System.Description": {
+        "oldValue": "<div>Valor Description</div>",
+        "newValue": "<div>Valor Description&nbsp;/ UPDATE DESCRIPTION</div>"
+      },
+      "System.History": {
+        "oldValue": "<div>Comment 1</div>",
+        "newValue": "<div>UPDATE COMMENT<br></div>"
+      },
+      "Microsoft.VSTS.Common.AcceptanceCriteria": {
+        "oldValue": "<div><span style=\"display:inline !important;\">Valor Acceptance Criteria</span><br></div>",
+        "newValue": "<div><span style=\"display:inline !important;\">Valor Acceptance Criteria&nbsp;/ UPDATE CRITERIA</span><br></div>"
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1/updates/2"
+      },
+      "workItemUpdates": {
+        "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1/updates"
+      },
+      "parent": {
+        "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1"
+      },
+      "html": {
+        "href": "https://dev.azure.com/fktec2014/web/wi.aspx?pcguid=346399a7-0d57-4a7b-af17-7d5711bf24c8&id=1"
+      }
+    },
+    "url": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1/updates/2",
+    "revision": {
+      "id": 1,
+      "rev": 2,
+      "fields": {
+        "System.AreaPath": "FK-TESTE-FABRICA",
+        "System.TeamProject": "FK-TESTE-FABRICA",
+        "System.IterationPath": "FK-TESTE-FABRICA",
+        "System.WorkItemType": "Epic",
+        "System.State": "New",
+        "System.Reason": "New epic",
+        "System.AssignedTo": "Frank Barros <fktec2014@outlook.com>",
+        "System.CreatedDate": "2020-03-30T15:14:08.837Z",
+        "System.CreatedBy": "Frank Barros <fktec2014@outlook.com>",
+        "System.ChangedDate": "2020-03-30T17:32:44.213Z",
+        "System.ChangedBy": "Frank Barros <fktec2014@outlook.com>",
+        "System.CommentCount": 2,
+        "System.Title": "TEST CUSTOM EPIC  1 / UPDATE TITLE",
+        "Microsoft.VSTS.Scheduling.TargetDate": "2020-03-31T00:00:00Z",
+        "Microsoft.VSTS.Scheduling.StartDate": "2020-03-30T00:00:00Z",
+        "Microsoft.VSTS.Common.StateChangeDate": "2020-03-30T15:14:08.837Z",
+        "Microsoft.VSTS.Common.Priority": 2,
+        "Microsoft.VSTS.Common.ValueArea": "Business",
+        "Custom.TestField1": "Valor Test field Status 1",
+        "Custom.TestFieldNewGroup1": "Valor Test field new group 1/ UPDATE TEST FIELD",
+        "Custom.TestFieldDetails1": "Valor Test field Details 1",
+        "System.Description": "<div>Valor Description&nbsp;/ UPDATE DESCRIPTION</div>",
+        "System.History": "<div>UPDATE COMMENT<br></div>",
+        "Microsoft.VSTS.Common.AcceptanceCriteria": "<div><span style=\"display:inline !important;\">Valor Acceptance Criteria&nbsp;/ UPDATE CRITERIA</span><br></div>"
+      },
+      "commentVersionRef": {
+        "commentId": 4246426,
+        "version": 1,
+        "url": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1/comments/4246426/versions/1"
+      },
+      "_links": {
+        "self": {
+          "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1/revisions/2"
+        },
+        "workItemRevisions": {
+          "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1/revisions"
+        },
+        "parent": {
+          "href": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1"
+        }
+      },
+      "url": "https://dev.azure.com/fktec2014/f8178df3-7e8a-46f5-ad12-d66de54362b3/_apis/wit/workItems/1/revisions/2"
+    }
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "346399a7-0d57-4a7b-af17-7d5711bf24c8",
+      "baseUrl": "https://dev.azure.com/fktec2014/"
+    },
+    "account": {
+      "id": "3c6df18a-93ee-4eea-b5f1-5e2a6532ea13",
+      "baseUrl": "https://dev.azure.com/fktec2014/"
+    },
+    "project": {
+      "id": "f8178df3-7e8a-46f5-ad12-d66de54362b3",
+      "baseUrl": "https://dev.azure.com/fktec2014/"
+    }
+  },
+  "createdDate": "2020-03-30T17:32:51.0818822Z"
+}
