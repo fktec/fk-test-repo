@@ -3,7 +3,7 @@ FROM openjdk:8
 USER root
 
 COPY /target/*.jar /opt/app/
-COPY /src/main/resources/devops/azure/resources/*.json /opt/app/devops/
+COPY /src/main/resources/devops/azure/*.json /opt/app/devops/
  	 
 WORKDIR /opt/app
 
