@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import br.com.devops.azure.workitem.bean.AzureDevOpsProcessor;
+import br.com.devops.azure.workitem.bean.AzureDevOpsSwitchProcessor;
 import br.com.devops.azure.workitem.bean.AzureWorkItemBean;
 import br.com.devops.azure.workitem.bean.AzureWorkItemConverter;
 import br.com.devops.azure.workitem.bean.aggregation.AzureWorkItemOperationAggregationStrategy;
@@ -56,7 +56,7 @@ public class AzureWorkItemRoute extends RouteBuilderBase {
 	public static final String CREATE_WORKITEM_RELANTIONS_URI = "{{route.azure.workitem.relation.create.uri}}";
 	
 	@Autowired
-	private AzureDevOpsProcessor azureDevOpsBean;
+	private AzureDevOpsSwitchProcessor azureDevOpsBean;
 	
 	@Autowired
 	private AzureWorkItemOperationAggregationStrategy relationOperationAggregationStrategy;

@@ -12,6 +12,7 @@ import br.com.devops.azure.workitem.domain.azure.workItem.AzureWorkItemNotifyBas
 import br.com.devops.azure.workitem.route.AzureDevOpsRoute;
 import br.com.devops.azure.workitem.route.AzureWorkItemRoute;
 import br.com.devops.azure.workitem.util.ConstantsUtil;
+import br.com.devops.bean.RestResponseBuilder;
 import br.com.globosat.integration.common.camel.api.route.RouteBuilderBase;
 
 @Component
@@ -34,7 +35,7 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 	public void configure() throws Exception 
 	{
 		super.configure();
-			
+		
 		rest(BASE_URL)
 			
 		.get()
@@ -56,7 +57,7 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 				.to(REST_EXTRACT_WORKITEM_BY_NOTIFY_URI)
 				.log("Enviando para a rota de criação de work item..")
 				.to(AzureWorkItemRoute.OPERATIONS_CREATE_WORKITEM_URI)
-			.end()
+				.bean(RestResponseBuilder.class)
 		.endRest();
 		
 		/*

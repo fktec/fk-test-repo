@@ -2,10 +2,10 @@ FROM openjdk:8
 
 USER root
 
-COPY target/*.jar /home/Documents/
-COPY src/main/resources/devops/azure/*.json /home/Documents/devops/
+COPY target/*.jar /opt/app/
+COPY src/main/resources/devops/azure/*.json /opt/app/devops-info/azure/
  	 
-WORKDIR /home/Documents
+WORKDIR /opt/app
 
 EXPOSE 8099
 ENTRYPOINT ["java", "-jar", "devops-workitem-sync-0.0.1-SNAPSHOT.jar"]
