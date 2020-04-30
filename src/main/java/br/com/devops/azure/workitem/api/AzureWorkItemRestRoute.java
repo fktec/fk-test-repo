@@ -48,7 +48,7 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 		.post(REST_AZURE_POST_WORKITEM_CREATE_URI)
 			.type(AzureWorkItemNotifyBase.class)
 			.route()
-			.routeId(REST_AZURE_WORKITEM_POST_CREATE_ROUTE_ID)
+			.routeId(REST_AZURE_WORKITEM_POST_CREATE_ROUTE_ID)				
 				.log("## [CREATE] Notificado por um Work item criado ##")
 				.unmarshal().json(JsonLibrary.Jackson, AzureWorkItemNotify.class)
 				.setProperty(ConstantsUtil.WorkItem.WORKITEM_TYPE, constant(WorkItemEventType.CREATE))

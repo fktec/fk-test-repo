@@ -50,9 +50,10 @@ public class AzureDevOpsRoute extends RouteBuilderBase {
 		
 		from(EXTRACT_AZURE_DEVOPS_USER_INFO_URI)
 			.routeId(EXTRACT_AZURE_DEVOPS_USER_INFO_ID)
+			.streamCaching()
 			.setProperty(ConstantsUtil.Exchange.TEMPORARY_BODY, body())
 			.doTry()
-				.pollEnrich(EXTRACT_AZURE_DEVOPS_USER_INFO_OUT_URI, 5000)
+				.pollEnrich(EXTRACT_AZURE_DEVOPS_USER_INFO_OUT_URI, 0)
 				.choice()
 					.when(body().isNotNull())
 						.unmarshal().json(JsonLibrary.Jackson, AzureUserDevOpsInfo[].class)
@@ -65,7 +66,7 @@ public class AzureDevOpsRoute extends RouteBuilderBase {
 				.end()
 			.endDoTry()
 			.doCatch(IOException.class)
-				.log(LoggingLevel.ERROR, "Erro ao tentar ler o arquivo")				
+				.log(LoggingLevel.ERROR, "Erro ao tentar ler o arquivo")
 			.end()
 		.end();
 		
