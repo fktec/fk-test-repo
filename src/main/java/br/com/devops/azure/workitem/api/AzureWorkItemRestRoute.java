@@ -41,7 +41,7 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 		.get()
 			.produces(MediaType.APPLICATION_JSON_UTF8_VALUE)
 			.route()
-				.setBody(constant("## Servidor OK! ##"))
+				.setBody(constant("## Servidor OK - PRONTO! ##"))
 			.end()
 		.endRest()
 		
