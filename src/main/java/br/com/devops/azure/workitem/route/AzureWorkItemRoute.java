@@ -145,7 +145,6 @@ public class AzureWorkItemRoute extends RouteBuilderBase {
 					.setBody().exchange(e -> extractFirtWorktItemIdByWIQLResponse(e))
 				.endChoice()
 				.otherwise()
-					.setBody(exchangeProperty(ConstantsUtil.Exchange.TEMPORARY_BODY))
 					.setBody(constant(null))
 				.endChoice()
 			.end()
@@ -192,7 +191,7 @@ public class AzureWorkItemRoute extends RouteBuilderBase {
 	private Object extractFirtWorktItemIdByWIQLResponse(Exchange e) 
 	{
 		AzureWIQLResponse azureWIQLResponse = e.getIn().getBody(AzureWIQLResponse.class);
-		if (azureWIQLResponse != null) {
+		if (azureWIQLResponse != null && (azureWIQLResponse.getWorkItems() != null && !azureWIQLResponse.getWorkItems().isEmpty())) {
 			e.setProperty(ConstantsUtil.WorkItem.WORKITEM_ID, azureWIQLResponse.getFirstWorkItemId());
 			return azureWIQLResponse.getFirstWorkItemId();
 		}

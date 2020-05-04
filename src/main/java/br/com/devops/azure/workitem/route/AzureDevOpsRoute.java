@@ -26,6 +26,9 @@ public class AzureDevOpsRoute extends RouteBuilderBase {
 	public static final String EXTRACT_AZURE_DEVOPS_USER_INFO_URI = "{{route.azure.devops.user.uri}}";
 	private static final String EXTRACT_AZURE_DEVOPS_USER_INFO_OUT_URI = "{{route.azure.devops.user.out.uri}}";
 	
+	private static final String HAS_TRIGGER_ID = "{{route.azure.devops.has-trigger.id}}";
+	public static final String HAS_TRIGGER_URI = "{{route.azure.devops.has-trigger.uri}}";	
+	
 	@Override
 	public void configure() throws Exception {
 		super.configure();
@@ -52,12 +55,14 @@ public class AzureDevOpsRoute extends RouteBuilderBase {
 			.routeId(EXTRACT_AZURE_DEVOPS_USER_INFO_ID)
 			.streamCaching()
 			.setProperty(ConstantsUtil.Exchange.TEMPORARY_BODY, body())
+			.log(LoggingLevel.INFO, "Buscando arquivo com informações de usuários do Azure Devops")
 			.doTry()
 				.pollEnrich(EXTRACT_AZURE_DEVOPS_USER_INFO_OUT_URI, 0)
 				.choice()
 					.when(body().isNotNull())
 						.unmarshal().json(JsonLibrary.Jackson, AzureUserDevOpsInfo[].class)
 						.bean(AzureUserDevOpsBean.class, "extractSourceAndTargetDevOps")
+						.to(HAS_TRIGGER_URI)
 						.setBody(exchangeProperty(ConstantsUtil.Exchange.TEMPORARY_BODY))
 						.removeProperty(ConstantsUtil.Exchange.TEMPORARY_BODY)
 					.endChoice()
@@ -70,5 +75,14 @@ public class AzureDevOpsRoute extends RouteBuilderBase {
 			.end()
 		.end();
 		
+		from(HAS_TRIGGER_URI)
+			.routeId(HAS_TRIGGER_ID)
+			.filter(exchangeProperty(ConstantsUtil.DevOps.AZURE_DEVOPS_AUTHORIZATION_TOKEN).isNull())
+				.log(LoggingLevel.WARN, "Nenhum trigger encontrado!")
+				.stop()
+			.end()
+		.end();
+		
 	}
+	
 }

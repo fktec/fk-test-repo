@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import br.com.devops.azure.workitem.domain.WorkItemRelation;
 import br.com.devops.azure.workitem.domain.WorkItemResource;
 import br.com.devops.azure.workitem.domain.azure.workItem.AzureWorkItemRelation;
+import br.com.devops.azure.workitem.domain.azure.workItem.AzureWorkItemResource;
 import br.com.devops.azure.workitem.domain.azure.workItem.AzureWorkItemResourceBase;
 import br.com.devops.azure.workitem.util.ConstantsUtil;
 
@@ -48,7 +49,7 @@ public class AzureWorkItemRelationAggregationStrategy implements AggregationStra
 	{
 		Boolean existsWorkItem = exchange.getProperty(ConstantsUtil.WorkItem.EXISTS_WORKITEM, Boolean.class);
 		if (existsWorkItem != null && existsWorkItem)
-			return exchange.getIn().getBody(Integer.class);
+			return exchange.getProperty(ConstantsUtil.WorkItem.WORKITEM_ID, Integer.class);
 		
 		AzureWorkItemResourceBase<?> targetWorkItem = exchange.getIn().getBody(AzureWorkItemResourceBase.class);
 		if (targetWorkItem != null)

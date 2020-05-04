@@ -25,11 +25,11 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 	//private static final String REST_AZURE_WORKITEM_POST_UPDATE_ROUTE_ID = "REST_AZURE_POST_WORKITEM_UPDATE";
 	//protected static final String REST_AZURE_POST_WORKITEM_UPDATE_URI = "update";
 	
-	private static final String REST_FILTER_WORKITEM_ID = "{{route.azure.rest.filter-workitem.id}}";
-	private static final String REST_FILTER_WORKITEM_URI = "{{route.azure.rest.filter-workitem.uri}}";
+	private static final String ROUTE_REST_FILTER_WORKITEM_ID = "{{route.azure.rest.filter-workitem.id}}";
+	private static final String ROUTE_REST_FILTER_WORKITEM_URI = "{{route.azure.rest.filter-workitem.uri}}";
 	
-	private static final String REST_EXTRACT_WORKITEM_BY_NOTIFY_ID = "{{route.azure.extract-workitem-by-notify.id}}";
-	private static final String REST_EXTRACT_WORKITEM_BY_NOTIFY_URI = "{{route.azure.extract-workitem-by-notify.uri}}";
+	private static final String ROUTE_REST_EXTRACT_WORKITEM_BY_NOTIFY_ID = "{{route.azure.extract-workitem-by-notify.id}}";
+	private static final String ROUTE_REST_EXTRACT_WORKITEM_BY_NOTIFY_URI = "{{route.azure.extract-workitem-by-notify.uri}}";
 	
 	@Override
 	public void configure() throws Exception 
@@ -41,7 +41,7 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 		.get()
 			.produces(MediaType.APPLICATION_JSON_UTF8_VALUE)
 			.route()
-				.setBody(constant("## Servidor OK - PRONTO! ##"))
+				.setBody(constant("## Servidor OK! ##"))
 			.end()
 		.endRest()
 		
@@ -52,9 +52,9 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 				.log("## [CREATE] Notificado por um Work item criado ##")
 				.unmarshal().json(JsonLibrary.Jackson, AzureWorkItemNotify.class)
 				.setProperty(ConstantsUtil.WorkItem.WORKITEM_TYPE, constant(WorkItemEventType.CREATE))
-				.to(REST_FILTER_WORKITEM_URI)
+				.to(ROUTE_REST_FILTER_WORKITEM_URI)
+				.to(ROUTE_REST_EXTRACT_WORKITEM_BY_NOTIFY_URI)
 				.to(AzureDevOpsRoute.EXTRACT_AZURE_DEVOPS_USER_INFO_URI)
-				.to(REST_EXTRACT_WORKITEM_BY_NOTIFY_URI)
 				.log("Enviando para a rota de criação de work item..")
 				.to(AzureWorkItemRoute.OPERATIONS_CREATE_WORKITEM_URI)
 				.bean(RestResponseBuilder.class)
@@ -76,8 +76,8 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 		.endRest();
 		*/
 		
-		from(REST_FILTER_WORKITEM_URI)
-			.routeId(REST_FILTER_WORKITEM_ID)
+		from(ROUTE_REST_FILTER_WORKITEM_URI)
+			.routeId(ROUTE_REST_FILTER_WORKITEM_ID)
 			.choice()
 				.when(PredicateBuilder.or(body().isNull(), bodyAs(String.class).isEqualTo("")))
 					.log(LoggingLevel.ERROR, "Body Inválido")
@@ -91,8 +91,8 @@ public class AzureWorkItemRestRoute extends RouteBuilderBase {
 			.removeHeader("CamelHttpUri")
 		.end();
 		
-		from(REST_EXTRACT_WORKITEM_BY_NOTIFY_URI)
-			.routeId(REST_EXTRACT_WORKITEM_BY_NOTIFY_ID)
+		from(ROUTE_REST_EXTRACT_WORKITEM_BY_NOTIFY_URI)
+			.routeId(ROUTE_REST_EXTRACT_WORKITEM_BY_NOTIFY_ID)
 			.filter(PredicateBuilder.and(
 					body().isNotNull(),
 					body().isInstanceOf(AzureWorkItemNotifyBase.class)))

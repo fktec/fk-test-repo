@@ -23,20 +23,8 @@ public class AzureWorkItemResourceUpdate extends AzureWorkItemResourceBase<Map<S
 	}
 
 	@Override
-	public String getProject() {
-		return revision.getProject();
+	public Map<String, Object> getMapFields() {
+		return revision.getFields();
 	}
-
-	@Override
-	public String getWorkItemType() {
-		return revision.getWorkItemType();
-	}
-
-	@Override
-	public String getSyncWorkItemFieldName() {
-		return null;
-	}
-	
-	
 
 }

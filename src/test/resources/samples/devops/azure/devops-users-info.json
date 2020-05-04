@@ -5,6 +5,7 @@
     "token": "OnZhY2NhZDRqaHV5YXJ6ZWJhenYyZWozcjJ5dTZwN3djcW92bjd1cW9tcGt5aWl3bzdreHE=",
     "targetUsers": [
       {
+      	"trigger": "fktec2019@outlook.com",
         "organization": "fktec2014",
         "project": "FK-TESTE-FABRICA",
         "token": "Omcyb2R6ZW9ocTZlY3MyYmxhdmdid2FzdHJpNXQ2ZmR0ZXJscGJ2N2x5MjVzZWhtenE0a3E="
